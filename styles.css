@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+section {
+    margin-top: 40px;
+}
+
+#navbar {
+    background-color: #fff;
+    width: 110%;
+    border-bottom: 1px solid;
+    z-index:1;
+}
+
+#navbar li {
+    color: #1b1c1c;
+    border-top: 1px solid black;
+    width: 100%;
+    list-style: none;
+    padding: 10px 30px;
+}
+
+#navbar a {
+    display: block;
+    padding: auto;
+    color: #1b1c1c;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    font-weight: 500;
+    text-indent: 5px;
+}
+
+p {
+    margin: 10px;
+}
+
+ul {
+    margin: 10px;
+    margin-left: 35px;
+}
+
+pre {
+    background-color: #fff;
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+header {
+    font-size: 1.8em;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+    margin: 10px;
+}
+    
+
+.image {
+    height: 12em;
+    }
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    color: black;
+}
+
+ol {
+    margin-left: 35px;
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 815px) {
+    body {
+        flex-direction: row;
+    }
+
+    #navbar {
+        width: 300px;
+        position: fixed;
+        height: 100%;
+        margin-left: -30px;
+    }
+
+    #main-doc {
+        margin: 0 20px;
+        margin-left: 350px;
+        position: absolute;
+        top: 5;
+    }
+
+    .image {
+        height: 12em;
+        margin: 5px;
+    }
+
+    ol {
+        position: absolute;
+        left: 300;
+        margin-top: 8px;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    .header {
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    p {
+        max-width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 960px) and (min-width: 815px) {
+    ol {
+        overflow-y: scroll;
+        max-height: 200px;
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>CSS Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header class="header" >CSS Documentation</header>
+        <ul>
+<li><a class="nav-link" href="#Getting_started_with_CSS">Getting started with CSS</a></li>
+                
+<li><a class="nav-link" href="#Syntax">Syntax</a></li>
+                
+<li><a class="nav-link" href="#Selectors">Selectors</a></li>
+                
+<li><a class="nav-link" href="#Properties">Properties</a></li>
+                
+<li><a class="nav-link" href="#Values">Values</a></li>
+                
+<li><a class="nav-link" href="#Box_Properties">Box Properties</a></li>
+
+<li><a class="nav-link" href="#Flexbox">Flexbox</a></li>
+
+<li><a class="nav-link" href="#Media_Queries">Media Queries</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Getting_started_with_CSS">
+            <header>Getting started with CSS</header>
+            <p>CSS (Cascading Style Sheets) is a styling language used for changing the look and formatting of a document written in HTML. It allows web developers to control the presentation of a webpage, including colors, fonts, layouts, and more.</p>
+        </section>
+        <section class="main-section" id="Syntax">
+            <header>Syntax</header>
+            <p>CSS consists of a set of rules, each containing a selector and a declaration block. The selector specifies which HTML elements the styling should be applied to, and the declaration block contains the styling properties and their values. The basic syntax is as follows:</p>
+            <pre><code>
+    selector {
+      property: value;
+    }
+  </code></pre>
+        </section>
+        <section class="main-section" id="Selectors">
+            <header>Selectors</header>
+            <p>CSS selectors are used to match elements in an HTML document.<br>Commonly used selectors:</p>
+  <ul>
+    <li>Element selector: targets all elements of a specific type (e.g., h1, p).</li>
+    <li>ID selector: targets an element with a specific ID attribute value (e.g., #myElement).</li>
+    <li>Class selector: targets elements with a specific class attribute value (e.g., .myClass).</li>
+  </ul>
+  <pre><code>
+    h1 {
+      property: value;
+    }
+
+    #h1 {
+      property: value;
+    }
+
+    .h1 {
+      property: value;
+    }
+  </code></pre></p> 
+        </section>
+        <section class="main-section" id="Properties">
+            <header>Properties</header>
+            <p>CSS properties define the styling characteristics of an element or the entire page layout. Some common properties include:</p>
+            <ul>
+    <li>Color: specifies the text color.</li>
+    <li>Font-family: sets the font for the text.</li>
+    <li>Width: sets the width of an element.</li>
+    <li>Display: controls the display behavior of an element.</li>
+  </ul>
+  <pre><code>
+    selector {
+      color: value;
+    }
+
+    selector {
+      font-family: value;
+    }
+  </code></pre>
+        </section>
+        <section class="main-section" id="Values">
+            <header>Values</header>
+            <p>CSS property values define the specific styles that should be applied. Examples of values include:</p>
+            <ul>
+    <li>Color values: hexadecimal, RGB, or color names.</li>
+    <li>Font-family values: specific font names or generic font families.</li>
+    <li>Length values: pixel, percentage, em, etc.</li>
+  </ul>
+  <pre><code>
+    selector {
+      color: rgb(255,255, 255);
+    }
+
+    selector {
+      height: 2px;
+    }
+  </code></pre>
+        </section>
+        <section class="main-section" id="Box_Properties">
+        <header>Box Properties</header>
+        <p>In the CSS box model, every HTML element is treated as a box with four adjustable areas:
+        <div class="inline">
+            <img class="image" alt="Box Properties" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png">
+            <ol >
+    <li>content (blue): where content appears (text and images)</li>
+    <li>padding: area around the content (transparent</li>
+    <li>border: border that goes around the padding and content</li>
+    <li>margin: area outside the border around the element (transparent)</li>
+           </ol>
+        </p>
+        </div>
+        </section>
+        <section class="main-section" id="Flexbox">
+            <header>Flexbox</header>
+            <p>Flexbox is a CSS module that provides a more efficient way to arrange and align elements within a container. It introduces a flexible box layout model that allows elements to automatically adjust their size and position based on available space and specified rules.
+
+With flexbox, you can create responsive and dynamic layouts without the need for complex calculations or multiple <a class="link" href="#Media_Queries">Media queries.</a> It is particularly useful for building navigation menus, grids, and flexible containers.
+
+The key concepts of flexbox include:
+<ul>
+<li>Flex Container: The parent element that contains flex items. It is defined by setting the display property to flex or inline-flex.</li>
+
+<li>Flex Items: The child elements within a flex container. They can be manipulated and arranged using various flex properties.</li>
+
+<li>Flex Direction: Determines the direction in which flex items are laid out within the flex container. It can be set to row (default), row-reverse, column, or column-reverse.</li>
+
+<li>Justify Content: Controls the alignment of flex items along the main axis of the flex container. It can be used to distribute space evenly or align items to the start, end, or center of the container.</li>
+
+<li>Align Items: Controls the alignment of flex items along the cross axis of the flex container. It can be used to align items to the top, bottom, center, baseline, or stretch them to fill the container.</li>
+
+<li>Flex Wrap: Specifies whether flex items should wrap onto multiple lines or stay on a single line. It can be set to nowrap (default), wrap, or wrap-reverse.</li>
+</ul>
+
+Overall, flexbox simplifies the process of creating flexible and responsive layouts, making it a powerful tool for modern web design.</p>
+        </section>
+        <section class="main-section" id="Media_Queries">
+            <header>Media Queries</header>
+            <p>Media queries in CSS are used to apply different styles based on the characteristics of the device (height. width, resolution) or browser being used to view the webpage. This allows the webpage to be rendered differently according to different screen sizes, resolutions, orientations, and other properties.</p>
+            <pre><code>
+    /* Styles for screens with max-width of 600px */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens with min-width of 1200px */
+@media (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Styles for screens between 601px and 1199px */
+@media (min-width: 601px) and (max-width: 1199px) {
+  body {
+    font-size: 16px;
+  }
+}
+  </code></pre>
+        </section>
+    </main>
+</body>
+</html>
